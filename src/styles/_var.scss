@@ -1,0 +1,149 @@
+$basic-margin: 32px;
+$padding-small: 16px;
+$basic-padding: 24px;
+$padding-basic: 24px;
+$padding-large: 32px;
+
+$font-size-content: 16px;
+$font-size-title: 24px;
+
+$color-primary: #4b8c92;
+$color-primary-light: rgba(255, 255, 255, 0.1);
+$color-primary-dark: #2c2ade;
+$color-second: #f8c255;
+$color-background: #4B8D92;
+$color-font: #ebeef5;
+$color-font-light: #cbced5;
+$color-background-card: rgba(255, 255, 255, 0.15);
+$color-grey-1: #ebeef5;
+
+$color-error: #ff3366;
+$color-warning: #e6a23c;
+$color-success: #67c23a;
+
+$deepBlue: #1d5198;
+$blue: #2d71b8;
+$grey: #dde1e8;
+
+$shadow: 1px 1px 12px 0px rgba(0, 0, 0, 0.15);
+$border: 1px solid $color-font-light;
+$trans: 0.3s ease 0s;
+
+// $max-width: 1440px;
+$max-width: 1000px;
+$xs: 440px;
+$sm: 768px;
+$md: 992px;
+$lg: 1200px;
+
+/* 4c4afe 3333f8
+Mixin
+*/
+@mixin responsive($screen) {
+  @media screen and(max-width: #{$screen}) {
+    @content;
+  }
+}
+
+@mixin fontSizeGlobal {
+  font-size: 17px !important;
+}
+
+/*=======Custom font-size XEK PAGE========*/
+#tab-assets, #tab-txs, #tab-permission {
+  font-size: 19px !important;
+}
+
+#pane-permission {
+  button {
+    @include fontSizeGlobal
+  }
+}
+
+.el-dropdown-menu__item {
+  @include fontSizeGlobal
+}
+
+.btn-card-fs {
+  p {
+    @include fontSizeGlobal
+  }
+}
+
+.create-warn {
+  ul li {
+    @include fontSizeGlobal
+  }
+}
+
+.phrase-container {
+  .el-form-item {
+    input {
+      @include fontSizeGlobal
+    }
+  }
+}
+
+.create-wallet-fs {
+  .el-form-item {
+    input {
+      @include fontSizeGlobal
+    }
+  }
+}
+
+.mnemonic {
+  textarea {
+    @include fontSizeGlobal
+  }
+}
+
+.el-row {
+  button {
+    @include fontSizeGlobal
+  }
+}
+
+.recover-container {
+  .el-form-item {
+    input {
+      @include fontSizeGlobal
+    }
+  }
+}
+
+.el-form {
+  .el-input {
+    @include fontSizeGlobal
+  }
+}
+
+.transaction {
+  .el-table {
+    font-size: 16px;
+  }
+
+  .el-pagination {
+    .el-pagination__total {
+      @include fontSizeGlobal
+    }
+  }
+}
+
+.el-message-box {
+  .el-message-box__title {
+    font-size: 19px !important;
+  }
+
+  .el-message-box__content {
+    .el-message-box__message {
+      @include fontSizeGlobal
+    }
+  }
+
+  .el-message-box__btns {
+    button {
+      @include fontSizeGlobal
+    }
+  }
+}
