@@ -1,0 +1,12 @@
+# XSR WEB
+SIORA Web Wallet.
+## REQUIRE
+
+NodeJS version >=10 , npm >=6
+
+## Development
+
+```shell
+$ npm install
+$ npm run serve
+```
